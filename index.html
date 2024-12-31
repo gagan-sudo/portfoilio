@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-800 ">
+    <!-- Header Section -->
+    <header class="bg-gray-900 text-white py-4 px-2 md:px-4">
+        <div class="container mx-auto flex justify-between items-center max-w-6xl">
+            <div class="text-white text-lg font-bold">
+                MyPortfolio
+            </div>
+            <div class="hidden md:flex space-x-4 ">
+               <a href="#about" class="hover:text-teal-400">About</a>
+               <a href="#projects" class="hover:text-teal-400">Projects</a>
+               <a href="#skills" class="hover:text-teal-400">Skills</a>
+               <a href="#contact" class="hover:text-teal-400">Contact</a>
+                <a href="../image/work3.jpg" download
+                class="bg-teal-500 text-white block text-center px-4 py-2 rounded hover:bg-teal-600">Download
+                CV</a>
+            </div>
+            <button title="btn" class="md:hidden
+            
+            text-white focus:outline-none" id="navbar-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div class="md:hidden hidden flex-col items-center space-y-4 mt-4" id="navbar-menu">
+            <a href="#about" class="hover:text-teal-400 block">About</a>
+            <a href="#projects" class="hover:text-teal-400 block">Projects</a>
+            <a href="#skills" class="hover:text-teal-400 block">Skills</a>
+            <a href="#contact" class="hover:text-teal-400 block">Contact</a>
+            <a href="../image/work3.jpg" download
+                class="bg-teal-500 text-white block text-center px-4 py-4 rounded hover:bg-teal-600">Download
+                CV</a>
+        </div>
+        <!-- <div class="container mx-auto flex justify-between items-center">
+            
+            <h1 class="text-2xl font-bold">MERN Dev Portfolio</h1>
+            
+        </div> -->
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-teal-500 text-white py-20 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4 ">Hi, I'm <b class="text-gray-900">Gagan </b> a  MERN Developer</h2>
+            <p class="text-lg">Specializing in building full-stack web applications with MongoDB, Express.js, React, and
+                Node.js</p>
+            <a href="#contact" class="inline-block mt-6 px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-700">Get
+                in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16  ">
+        <div class="container mx-auto text-center ">
+            <h3 class="text-3xl font-bold mb-6">About Me</h3>
+            <p class="text-gray-600 max-w-3xl mx-auto">I am a passionate MERN stack developer with experience in
+                designing and implementing robust web applications. My journey in software development has been fueled
+                by curiosity, dedication, and a drive to solve challenging problems.</p>
+                
+            <div class="mt-2 sm:mt-6 container mx-auto  md:mt-10 md:flex justify-between md:gap-10  max-w-5xl ">
+                <div class="bg-[url('./about_image.webp')] bg-cover bg-center h-64 w-full  rounded-lg ">
+
+                </div>
+                <!-- about :- range  -->
+                <div class="px-6 lg:px-0 lg:max-w-md mt-1 md:mt-0    text-start w-full ">
+                    <div class="container mx-auto space-y-3">
+                        <!-- about range  react -->
+                        <div class="container mx-auto ">
+                            <h1 class="text-xl font-semibold ">React</h1>
+                            <input id="react" type="range" min="0" max="100" value="95"
+                                class="w-full h-2 appearance-none cursor-pointer" disabled title="react">
+
+                        </div>
+
+                        <!-- about range  redux -->
+                        <div class="container mx-auto">
+                            <h1 class="text-xl font-semibold ">Redux</h1>
+                            <input id="redux" type="range" min="0" max="100" value="90"
+                                class="w-full h-2 appearance-none cursor-pointer" disabled title="redux">
+                        </div>
+
+                        <!-- about range  material -->
+                        <div class="container mx-auto">
+                            <h1 class="text-xl font-semibold ">Material UI</h1>
+                            <input id="material" type="range" min="0" max="100" value="95"
+                                class="w-full h-2 appearance-none cursor-pointer" disabled title="material">
+                        </div>
+
+                        <!-- about range  MERN -->
+                        <div class="container mx-auto ">
+                            <h1 class="text-xl font-semibold ">MERN</h1>
+                            <input id="mern" type="range" min="0" max="100" value="85"
+                                class="w-full h-2 appearance-none cursor-pointer" disabled title="mern">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-200 py-16 px-2">
+        <div class="container mx-auto text-center max-w-5xl">
+            <h3 class="text-3xl font-bold mb-6">Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="bg-white shadow-md rounded overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 1" class="w-full">
+                    <div class="p-4">
+                        <h4 class="text-xl font-bold mb-2">Project Name</h4>
+                        <p class="text-gray-600">Brief description of the project. Technologies used include React and
+                            Node.js.</p>
+                        <a href="#" class="block mt-4 text-teal-500 hover:underline">View Project</a>
+                    </div>
+                </div>
+                <!-- Additional project cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-2">
+        <div class="container mx-auto text-center max-w-5xl">
+            <h3 class="text-3xl font-bold mb-6">Skills</h3>
+            <div class="p-1 sm:p-0 sm:grid sm:grid-cols-2 md:grid-cols-4 space-y-2
+            sm:space-y-0 sm:gap-4  md:gap-6">
+                <!-- React Card -->
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+                    <i class="fab fa-react text-blue-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">React</h2>
+                    <p class="text-gray-700">Build dynamic and responsive user interfaces with React.</p>
+                </div>
+                <!-- Redux Card -->
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+                    <i class="fab fa-js-square text-purple-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Redux</h2>
+                    <p class="text-gray-700">Manage application state effectively with Redux.</p>
+                </div>
+                <!-- Material UI Card -->
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+                    <i class="fab fa-uikit text-green-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">Material UI</h2>
+                    <p class="text-gray-700">Design beautiful and consistent UIs with Material UI.</p>
+                </div>
+                <!-- MERN Card -->
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-database text-yellow-500 text-4xl mb-4"></i>
+                    <h2 class="text-xl font-bold mb-2">MERN</h2>
+                    <p class="text-gray-700">Develop full-stack applications with the MERN stack.</p>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-900 text-white px-2 py-16 ">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
+            <form id="contact-form" class="max-w-xl mx-auto text-teal-500">
+                <div class="mb-4 ">
+                    <input  type="text" id="name" name="name" placeholder="Your Name" 
+                        class="w-full px-4 py-2 rounded border border-gray-400 focus:outline-none">
+                    <p id="name-error" class="text-start text-red-200 text-sm hidden">Name is required.</p>
+                </div>
+                <div class="mb-4">
+                    <input type="email" id="email" name="email" placeholder="Your Email" 
+                        class="w-full px-4 py-2 rounded border border-gray-400 focus:outline-none">
+                        <p id="email-error" class="text-start text-red-200 text-sm hidden">Email is required</p>
+                    <p id="email-validation-error" class="text-start text-red-200 text-sm hidden">Please enter a valid email.</p>
+                </div>
+                <div class="mb-4">
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" 
+                        class="w-full px-4 py-2 rounded border border-gray-400 focus:outline-none"></textarea>
+                    <p id="message-error" class=" text-start text-red-200 text-sm  hidden">Message is required.</p>
+                </div>
+                <button type="submit" class="px-6 py-2 bg-teal-500 text-white rounded hover:bg-teal-400">Send Message</button>
+            </form>
+        </div>
+    </section>
+  
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-4 text-center">
+        <p>&copy; 2025 GAGAN MERN Developer. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
